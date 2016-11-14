@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+  font-size: 14px;
+  color: #fff;
+  background-color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+}
+.profile, .main{
+	position: relative;
+  	min-height: 1px;
+  	float: left;
+}
+
+/*PROFILE*/
+.profile{
+	width:23%;
+	height: 100%;
+	background: #353541;  
+	position: relative;
+  	min-height: 1px;
+  	float: left;
+}
+#portrait {
+  	background: url('../images/Portrait.jpg') no-repeat center center;
+    background-size: cover;
+    height: 220px;
+    position: relative;
+}
+#portrait div {
+	position: absolute;
+	left: 30px;
+	bottom: 0px;
+}
+#portrait p {
+	font-size: 16;
+}
+.btn-close {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.sidenav {
+    background-color: #353541;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  	min-height: 1px;
+  	float: left;
+}
+.nav > li > a {
+	color: #fff;
+    border-bottom: 1px solid #242431;
+    padding: 25px auto 25px 25px;
+    font-size: 22px;
+}
+
+/** HEADER **/
+.main{
+	width: 77%;
+	position: relative;
+}
+#content-header p {
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+#content-header{
+	position: absolute;
+	left: 50%; 
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
+.box{
+	border: 1px solid #fb6470;
+	background-color: #fb6470;
+	bottom: 15px;
+}
+#header .box {
+	border-radius: 4px;
+	padding: 20px 45px 20px 45px;
+	font-size: 22px;
+}
+#header {
+	background: url('../images/Header.jpg') no-repeat center center;
+  	background-size: cover;
+  	height: 440px;
+  	position: relative;
+  	top: -20px;
+}
+/* END HEADER */
+
+/* FOOTER */
+
+/* END FOOTER */
+
+
+
+/* HOME PAGE */
+/* END HOME PAGE */
+
+/* MENU CATEGORIES PAGE */
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+/* END SINGLE CATEGORY PAGE */
+
+
