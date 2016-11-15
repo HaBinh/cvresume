@@ -3,10 +3,10 @@
 	padding: 0;
 }
 body {
-  font-size: 14px;
-  color: #fff;
-  background-color: #ffffff;
-  font-family: 'Raleway', sans-serif;
+  	font-size: 14px;
+	color: #fff; 
+  	background-color: #ffffff;
+  	font-family: 'Raleway', sans-serif;
 }
 .profile, .main{
 	position: relative;
@@ -39,8 +39,8 @@ body {
 }
 .btn-close {
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 10px;
+	left: 20px;
 }
 .sidenav {
     background-color: #353541;
@@ -53,7 +53,7 @@ body {
 .nav > li > a {
 	color: #fff;
     border-bottom: 1px solid #242431;
-    padding: 25px auto 25px 25px;
+    padding: 15px 30px;
     font-size: 22px;
 }
 
@@ -88,11 +88,87 @@ body {
   	background-size: cover;
   	height: 440px;
   	position: relative;
-  	top: -20px;
 }
 /* END HEADER */
 
 /* FOOTER */
+#message{
+	width: 45%;
+	float: left;
+	position: relative;
+	padding-bottom: 80px;
+} 
+#message div:nth-child(2){
+	border-right: 1px solid #cccccc; 		
+	padding: 30px 80px 15px 115px; 
+}
+footer h4 {
+	color: black;
+	margin-bottom: -10px;
+	font-size: 22px;
+	margin-left: 115px;
+}
+footer .form-control{
+	margin-bottom: 20px; 
+    border-radius: 0px;
+}
+footer input:nth-child(3){
+	height: 100px;
+	padding-bottom: 74px;
+}
+footer .box {
+	padding: 12px 18px;
+	font-size: 16px;
+
+}
+#message div:nth-child(3) {
+	text-align: right;
+	margin-right: 80px;
+}
+footer ul{
+	float:left;
+	color: #3e3e3e;
+
+}
+footer ul li img, footer ul li div{
+	float: left;
+}
+footer ul li{
+	list-style: none;
+	overflow: hidden;
+	padding: 10px 50px;
+}
+footer ul li h4, footer ul li p, footer ul li img{
+	margin: 15px auto 15px 10px;
+}
+footer ul li h4{
+	font-size: 18px;
+}
+footer ul li p{
+	font-size: 14px;
+}
+footer > div:nth-child(3){
+	clear: both;
+	border-top: 1px solid #cccccc;
+	margin-left: 90px;
+	margin-right: 80px;
+	text-align: center;
+	padding-top: 30px;
+}
+footer > div > p{
+	size: 12px;
+	color: #3e3e3e;
+	margin: 10px auto 30px; 
+}
+footer > div > a:nth-child(2){
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+}
+footer > div > a{
+	padding-left: 10px;
+	padding-right: 10px;  
+}
+
 
 /* END FOOTER */
 
