@@ -154,6 +154,156 @@ div.main div.entry h2:after{
 	display:block;
 	clear:both;
 }
+#work-ex, #education{
+	position: relative;
+	height: 650px;
+	top:0;
+	left: 0;
+}
+#work-ex li, #education li{
+	background-color: #fff;
+	width: 32px;
+	height: 32px;
+	border: 2px solid #010101;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	position: relative;
+	top:0;
+	left:0;
+}
+#work-ex li:after, #education li:after{
+	content: "";
+	display:block;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	width: 50%;
+	height: 50%;
+	background-color:#fb6470;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	border: 2px solid #010101;
+}
+#work-ex li:nth-of-type(2n+1), #education li:nth-of-type(2n+1){
+	margin-bottom: 125px;
+}
+#work-ex li:nth-of-type(2n), #education li:nth-of-type(2n){
+	margin-bottom: 80px;
+}
+#work-ex li:last-of-type, #education  li:last-of-type {
+	margin:0;
+}
+#work-ex ul, #education ul{
+	position: absolute;
+	top:150px;
+	left: 45%;
+	width:35px;
+	background-image: -webkit-linear-gradient(90deg,#fff,
+											#fff 48%,
+											#010101 48%,
+											#010101 52%,
+											#fff 52%,
+											#fff);
+	
+	background-image: -moz-linear-gradient(90deg,#fff,
+											#fff 48%,
+											#010101 48%,
+											#010101 52%,
+											#fff 52%,
+											#fff);
+											
+	background-image: -moz-linear-gradient(90deg,#fff,
+											#fff 48%,
+											#010101 48%,
+											#010101 52%,
+											#fff 52%,
+											#fff);
+											
+	background-image: -o-linear-gradient(90deg,#fff,
+											#fff 48%,
+											#010101 48%,
+											#010101 52%,
+											#fff 52%,
+											#fff);
+											
+	background-image: -ms-linear-gradient(90deg,#fff,
+											#fff 48%,
+											#010101 48%,
+											#010101 52%,
+											#fff 52%,
+											#fff);
+	
+	background-image: linear-gradient(90deg,#fff,
+											#fff 48%,
+											#010101 48%,
+											#010101 52%,
+											#fff 52%,
+											#fff);
+}
+#work-ex li div, #education li div{
+	position: absolute;
+	min-width: 300px;
+	padding: 15px;
+	background-color: #353541;
+	font: normal 14px Raleway;
+	color: #fff;
+	border-radius: 10px;
+}
+
+#work-ex li:nth-of-type(2n+1) div, #education li:nth-of-type(2n+1) div{
+	top: -10px;
+	left: 70px;
+}
+
+#work-ex li:nth-of-type(2n) div, #education li:nth-of-type(2n) div{
+	bottom: 0;
+	right: 70px;
+}
+
+#work-ex li div:after, #education li div:after{
+	position: absolute;
+	display:block;
+	content:"";
+	width:0;
+	height:0;
+	border: solid #353541;
+	border-width: 10px 12.5px;
+}
+
+#work-ex li:nth-of-type(2n+1) div:after, #education li:nth-of-type(2n+1) div:after{
+	border-color: #353541 #353541 transparent transparent;
+	top: 25px;
+	left: -24px;
+}
+#work-ex li:nth-of-type(2n) div:after, #education li:nth-of-type(2n) div:after{
+	border-color:transparent transparent #353541 #353541;
+	bottom: 15px;
+	right: -24px;
+}
+
+#work-ex li h3, #education li h3{
+	font: normal 16px  Raleway;
+	margin: 0;
+}
+#work-ex li .at, #education .at{
+	font: normal 16px Raleway-Medium;
+	padding: 10px;
+}
+#work-ex li a, #education li a{
+	text-decoration: none;
+	font: normal 16px "Raleway-Med";
+	color: #fb6470;
+	text-transform: uppercase;
+	display: block;
+	padding: 5px;
+}
+
 
 /* FOOTER */
 footer{
