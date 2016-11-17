@@ -39,8 +39,11 @@ body {
 	left: 30px;
 	bottom: 0px;
 }
+#portrait div h2{
+	font: 500 32px 'Raleway', sans-serif;
+}
 #portrait p {
-	font-size: 16;
+	font: 500 16px/15px 'Raleway', sans-serif;
 }
 .btn-close {
 	position: absolute;
@@ -59,7 +62,7 @@ body {
 	color: #fff;
     border-bottom: 1px solid #242431;
     padding: 15px 30px;
-    font-size: 22px;
+    font: 500 22px 'Raleway', sans-serif;
 }
 
 /** HEADER **/
@@ -67,26 +70,23 @@ body {
 	width: 77%;
 	position: relative;
 }
-#content-header p {
-	margin-top: 25px;
-	margin-bottom: 50px;
-}
 #content-header{
 	position: absolute;
 	left: 50%; 
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
+    width: 80%;
 }
 .box{
 	border: 1px solid #fb6470;
 	background-color: #fb6470;
-	bottom: 15px;
+	margin-top: 45px;
 }
 #header .box {
 	border-radius: 4px;
-	padding: 20px 45px 20px 45px;
-	font-size: 22px;
+	padding: 15px 45px 15px 45px;
+	font: 500 22px 'Raleway', sans-serif;
 }
 #header {
 	background: url('../images/Header.jpg') no-repeat center center;
@@ -94,10 +94,19 @@ body {
   	height: 440px;
   	position: relative;
 }
+#header div h1{
+	font: 600 48px 'Raleway', sans-serif;
+}
+#header div h5{
+	font: 500 14px 'Raleway', sans-serif;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
 /* END HEADER */
 
 div.main article, #my-skills{
-	padding: 80px 85px 0 95px;
+	padding: 45px 85px 0 95px;
 }
 div.main li{
 	list-style:none;
@@ -107,7 +116,7 @@ div.main div.entry{
 	border-bottom: 1px solid #e5e5e5;
 }
 div.main div.entry h2{
-	font: normal 32px;
+	font: 600 32px 'Raleway', sans-serif;
 	color: #3e3e3e;
 	padding: 18px 0 20px 0;
 	margin-bottom: 35px;
@@ -125,19 +134,19 @@ div.main div.entry h2:after{
 	bottom:0;
 }
 #about-me p{
-	font: normal 14px;
+	font: 500 14px 'Raleway', sans-serif;
 	color: #747474;
 	margin-bottom: 25px;
 }
 #about-me li{
 	background-color:#f9f9f9;
-	font: normal 18px;
+	font: 500 18px 'Raleway', sans-serif;
 	color: #3e3e3e;
 	border-bottom: 1px solid #e0e0e0;
 	padding: 20px 0;
 }
-#about-me li .em{
-	font-family:;
+#about-me li span strong{
+	font-weight: 600;
 }
 #about-me div{
 	width: 50%;
@@ -156,8 +165,8 @@ div.main div.entry h2:after{
 }
 #work-ex, #education{
 	position: relative;
-	height: 650px;
-	top:0;
+	height: 700px;
+	top:20px;
 	left: 0;
 }
 #work-ex li, #education li{
@@ -201,57 +210,22 @@ div.main div.entry h2:after{
 }
 #work-ex ul, #education ul{
 	position: absolute;
-	top:150px;
+	top:140px;
 	left: 45%;
 	width:35px;
-	background-image: -webkit-linear-gradient(90deg,#fff,
-											#fff 48%,
-											#010101 48%,
-											#010101 52%,
-											#fff 52%,
-											#fff);
-	
-	background-image: -moz-linear-gradient(90deg,#fff,
-											#fff 48%,
-											#010101 48%,
-											#010101 52%,
-											#fff 52%,
-											#fff);
-											
-	background-image: -moz-linear-gradient(90deg,#fff,
-											#fff 48%,
-											#010101 48%,
-											#010101 52%,
-											#fff 52%,
-											#fff);
-											
-	background-image: -o-linear-gradient(90deg,#fff,
-											#fff 48%,
-											#010101 48%,
-											#010101 52%,
-											#fff 52%,
-											#fff);
-											
-	background-image: -ms-linear-gradient(90deg,#fff,
-											#fff 48%,
-											#010101 48%,
-											#010101 52%,
-											#fff 52%,
-											#fff);
-	
-	background-image: linear-gradient(90deg,#fff,
-											#fff 48%,
-											#010101 48%,
-											#010101 52%,
-											#fff 52%,
-											#fff);
+	background-image: -webkit-linear-gradient(90deg,#fff,#fff 48%,#010101 48%,#010101 52%,#fff 52%,#fff);
+	background-image: -moz-linear-gradient(90deg,#fff,#fff 48%,#010101 48%,#010101 52%,#fff 52%,#fff);
+	background-image: -moz-linear-gradient(90deg,#fff,#fff 48%,#010101 48%,#010101 52%,#fff 52%,#fff);
+	background-image: -o-linear-gradient(90deg,#fff,#fff 48%,#010101 48%,#010101 52%,#fff 52%,#fff);
+	background-image: -ms-linear-gradient(90deg,#fff,#fff 48%,#010101 48%,#010101 52%,#fff 52%,#fff);
+	background-image: linear-gradient(90deg,#fff,#fff 48%,#010101 48%,#010101 52%,#fff 52%,#fff);
 }
 #work-ex li div, #education li div{
 	position: absolute;
 	min-width: 300px;
 	padding: 15px;
 	background-color: #353541;
-	font: normal 14px Raleway;
+	font: 500 14px 'Raleway', sans-serif;
 	color: #fff;
 	border-radius: 10px;
 }
@@ -286,24 +260,87 @@ div.main div.entry h2:after{
 	bottom: 15px;
 	right: -24px;
 }
-
 #work-ex li h3, #education li h3{
-	font: normal 16px  Raleway;
+	font: 600 16px 'Raleway', sans-serif;
 	margin: 0;
 }
 #work-ex li .at, #education .at{
-	font: normal 16px Raleway-Medium;
+	font: 500 16px 'Raleway', sans-serif;
 	padding: 10px;
 }
 #work-ex li a, #education li a{
 	text-decoration: none;
-	font: normal 16px "Raleway-Med";
+	font: 500 18px 'Raleway', sans-serif;
 	color: #fb6470;
 	text-transform: uppercase;
 	display: block;
-	padding: 5px;
+	padding-top: 5px;
+	padding-bottom: 10px;
 }
-
+#my-skills{
+	background-color:#1d1d24;
+	color: #fff;
+	font: 500 18px 'Raleway', sans-serif;
+	padding-left: 115px;
+	padding-bottom:65px;
+	margin-top: 20px;
+}
+#my-skills h2{
+	font: 600 32px 'Raleway', sans-serif;
+	color: #fff;
+}
+#my-skills h3{
+	font: 500 18px 'Raleway', sans-serif;
+	padding: 10px 0 10px;
+}
+#my-skills ul{
+	width: 50%;
+	float: left;
+}
+#my-skills li{
+	position: relative;
+	top:0;
+	left: 0;
+}
+#my-skills:after{
+	content:"";
+	display:block;
+	clear: both;
+}
+#my-skills li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	position: absolute;
+	top: 45px;
+	left: 285px;
+}
+#my-skills .bar{
+	width: 265px;
+	height: 5px;
+	background-color: #bcbcbe;
+	position: relative;
+	top:0;
+	left:0;
+}
+#my-skills .bar-percent{
+	width: 90%;
+	height: 100%;
+	background-color: #fb6470;
+}
+#my-skills .bar-ball{
+	width: 20px;
+	height: 20px;
+	background-color: #fb6470;
+	position: absolute;
+	top:-8px;
+	left:-webkit-calc(90% - 10px);
+	left:-moz-calc(90% - 10px);
+	left:-o-calc(90% - 10px);
+	left:-ms-calc(90% - 10px);
+	left:calc(90% - 10px);
+	border-radius: 50%;
+}
 
 /* FOOTER */
 footer{
@@ -317,18 +354,19 @@ footer{
 } 
 #message div:nth-child(2){
 	border-right: 1px solid #cccccc; 		
-	padding: 30px 80px 15px 115px; 
+	padding: 30px 80px 0px 115px; 
 }
 footer h4 {
 	color: black;
 	margin-bottom: -10px;
-	font-size: 22px;
+	font: 500 22px 'Raleway', sans-serif;
 	margin-left: 115px;
 }
 footer .form-control{
 	margin-bottom: 20px; 
     border-radius: 0px;
    	border-color: black;
+   	font: italic 500 14px 'Raleway', sans-serif;
 }
 footer input:nth-child(3){
 	height: 100px;
@@ -336,8 +374,8 @@ footer input:nth-child(3){
 }
 footer .box {
 	padding: 12px 18px;
-	font-size: 16px;
-
+	font: 500 16px 'Raleway', sans-serif;
+	margin-top: 0;
 }
 #message div:nth-child(3) {
 	text-align: right;
@@ -360,10 +398,10 @@ footer ul li h4, footer ul li p, footer ul li img{
 	margin: 15px auto 15px 10px;
 }
 footer ul li h4{
-	font-size: 18px;
+	font: 500 18px 'Raleway', sans-serif;
 }
 footer ul li p{
-	font-size: 14px;
+	font: 500 14px 'Raleway', sans-serif;
 }
 footer > div:nth-child(3){
 	clear: both;
