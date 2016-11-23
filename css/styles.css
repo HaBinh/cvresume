@@ -434,19 +434,65 @@ div.main div.entry h2:after{
 
 
 /* PORTFOLIO PAGE */
+div.main div#portfolio{
+	padding: 40px 10px 85px 115px;
+}
+div.main div#portfolio h2{
+	font: 600 32px 'Raleway', sans-serif;
+	color: #3e3e3e;
+	padding: 18px 0 20px 0;
+	margin-bottom: 35px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+div.main div#portfolio h2:after{
+	content:"";
+	display:block;
+	border: 1px solid #fb6470;
+	width: 75px;
+	position: absolute;
+	left: 0;
+	bottom:0;
+}
 .portfolio-tile { 
   position: relative;
   overflow: hidden;
   width: 360px;
   height: 355px;
-  margin: 0 auto 15px;
+  margin: 0 20px 20px;
+  padding: 0;
   background-color: #01b9c3;
+}
+nav.navbar div.container-fluid{
+	padding: 0 15% 0 0;
+	margin-bottom: 50px;
+}
+nav.navbar ul.nav li{
+	padding: 0;
+}
+nav.navbar ul.nav a{
+	font: 500 18px 'Raleway', sans-serif;
+	color: #3e3e3e;
+	padding: 10px 15px 10px 15px;
+}
+nav.navbar ul.nav li:nth-child(4), nav.navbar ul.nav li:nth-child(3){
+	text-align: right;
+}
+nav.navbar ul.nav li:nth-child(2){
+	text-align: center;
+}
+nav.navbar ul.nav a:hover {
+	border-bottom: 2px solid #fb6470;
 }
 .portfolio-tile h3 {
   font: 500 22px 'Raleway', sans-serif;
   margin-top: 17px;
   margin-bottom: 10px;
   margin-left: 17px;
+}
+div.portfolio-tile {
+	margin-bottom: 40px;
 }
 .portfolio-tile p {
   font: 500 16px 'Raleway', sans-serif;
@@ -457,6 +503,7 @@ div.main div.entry h2:after{
   color: #ffffff;
   margin-left: 17px;
 }
+
 /* END PORTFOLIO PAGE */
 
 /* SINGLE PORTFOLIO PAGE */
