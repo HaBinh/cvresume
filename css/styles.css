@@ -105,8 +105,6 @@ body {
 }
 /* END HEADER */
 
-
-
 /* FOOTER */
 footer{
 	padding-top: 80px;
@@ -149,7 +147,6 @@ footer .box {
 footer ul{
 	float:left;
 	color: #3e3e3e;
-
 }
 footer ul li img, footer ul li div{
 	float: left;
@@ -190,8 +187,6 @@ footer > div > a{
 	padding-right: 10px;  
 }
 /* END FOOTER */
-
-
 
 /* HOME PAGE */
 div.main article, #my-skills{
@@ -318,17 +313,14 @@ div.main div.entry h2:after{
 	color: #fff;
 	border-radius: 10px;
 }
-
 #work-ex li:nth-of-type(2n+1) div, #education li:nth-of-type(2n+1) div{
 	top: -10px;
 	left: 70px;
 }
-
 #work-ex li:nth-of-type(2n) div, #education li:nth-of-type(2n) div{
 	bottom: 0;
 	right: 70px;
 }
-
 #work-ex li div:after, #education li div:after{
 	position: absolute;
 	display:block;
@@ -338,7 +330,6 @@ div.main div.entry h2:after{
 	border: solid #353541;
 	border-width: 10px 12.5px;
 }
-
 #work-ex li:nth-of-type(2n+1) div:after, #education li:nth-of-type(2n+1) div:after{
 	border-color: #353541 #353541 transparent transparent;
 	top: 25px;
@@ -435,7 +426,7 @@ div.main div.entry h2:after{
 
 /* PORTFOLIO PAGE */
 div.main div#portfolio{
-	padding: 40px 10px 85px 115px;
+	padding: 40px 15px 0px 115px;
 }
 div.main div#portfolio h2{
 	font: 600 32px 'Raleway', sans-serif;
@@ -464,6 +455,21 @@ div.main div#portfolio h2:after{
   padding: 0;
   background-color: #01b9c3;
 }
+#color2{
+	background-color: #1e2e3e;
+}
+#color3{
+	background-color: #3f3d3e;
+}
+#color4{
+	background-color: #0093b5;
+}
+#color5{
+	background-color: #353541;
+}
+#color6{
+	background-color: #6176ab;
+}
 nav.navbar div.container-fluid{
 	padding: 0 15% 0 0;
 	margin-bottom: 50px;
@@ -485,6 +491,7 @@ nav.navbar ul.nav li:nth-child(2){
 nav.navbar ul.nav a:hover {
 	border-bottom: 2px solid #fb6470;
 }
+
 .portfolio-tile h3 {
   font: 500 22px 'Raleway', sans-serif;
   margin-top: 17px;
@@ -502,11 +509,15 @@ div.portfolio-tile {
 .portfolio-tile a {
   color: #ffffff;
   margin-left: 17px;
+  border-bottom: 1px solid;
 }
-
+.portfolio-tile a:hover{
+	text-decoration: none;
+}
 /* END PORTFOLIO PAGE */
 
 /* SINGLE PORTFOLIO PAGE */
+
 /* END SINGLE PORTFOLIO PAGE */
 
 
