@@ -13,10 +13,10 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-
+    
 </head>
 
 <body>
@@ -25,26 +25,26 @@
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
+            <div class="sidebar-nav">
                 <div class="profile">
-                    <div id="portrait" alt="Portrait">
+                    <div id="portrait">
                       <a href="#menu-toggle" id="menu-toggle"><img src='images/Close.png' class="btn-close" height="40" width="40" alt="Close"></a>
                       <div>
                         <h2>Al Rayhan</h2>
                         <p>UI/UX Expert</p>
                       </div>
                     </div> 
-                    <ul class="nav nav-pills nav-stacked navbar sidenav">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="#about-me">About Me</a></li>
-                      <li><a href="#education">Education</a></li>
-                      <li><a href="#work-ex">Work Experience</a></li>
-                      <li><a href="#my-skills">Skills</a></li>
-                      <li><a href="portfolio.html">Portfolio</a></li>
-                      <li><a href="#message">Contacts</a></li>
-                    </ul><br>
+                    <nav class="nav nav-pills nav-stacked navbar sidenav">
+                      <div><a href="index.html">Home</a></div>
+                      <div><a href="#about-me">About Me</a></div>
+                      <div><a href="#education">Education</a></div>
+                      <div><a href="#work-ex">Work Experience</a></div>
+                      <div><a href="#my-skills">Skills</a></div>
+                      <div><a href="portfolio.html">Portfolio</a></div>
+                      <div><a href="#message">Contacts</a></div>
+                    </nav><br>
                 </div>
-            </ul>
+            </div>
         </div>
         <!-- /#sidebar-wrapper -->
 
@@ -183,61 +183,43 @@
                     <div id="my-skills" class="entry">
                             <h2>My Skills</h2>
                             <ul>
-                                <li>
+                                <li class="project">
                                     <h3>User Experience</h3>
-                                    <div class="bar">
-                                        <div class="bar-percent"></div>
-                                        <div class="bar-ball"></div>
-                                    </div>
-                                    <a href="#">90%</a>
+                                    <div class="bar"></div>
+                                    <input type="text" class="percent" readonly />
                                 </li>
-                                <li>
+                                <li class="project">
                                     <h3>User Experience</h3>
-                                    <div class="bar">
-                                        <div class="bar-percent"></div>
-                                        <div class="bar-ball"></div>
-                                    </div>
-                                    <a href="#">98%</a>
+                                    <div class="bar"></div>
+                                    <input type="text" class="percent" readonly />
                                 </li>
-                                <li>
+                                <li class="project">
                                     <h3>User Experience</h3>
-                                    <div class="bar">
-                                        <div class="bar-percent"></div>
-                                        <div class="bar-ball"></div>
-                                    </div>
-                                    <a href="#">70%</a>
+                                    <div class="bar"></div>
+                                    <input type="text" class="percent" readonly />
                                 </li>
                             </ul>
                             <ul>
-                                <li>
+                                <li class="project">
                                     <h3>User Experience</h3>
-                                    <div class="bar">
-                                        <div class="bar-percent"></div>
-                                        <div class="bar-ball"></div>
-                                    </div>
-                                    <a href="#">90%</a>
+                                    <div class="bar"></div>
+                                    <input type="text" class="percent" readonly />
                                 </li>
-                                <li>
+                                <li class="project">
                                     <h3>User Experience</h3>
-                                    <div class="bar">
-                                        <div class="bar-percent"></div>
-                                        <div class="bar-ball"></div>
-                                    </div>
-                                    <a href="#">80%</a>
+                                    <div class="bar"></div>
+                                    <input type="text" class="percent" readonly />
                                 </li>
-                                <li>
+                                <li class="project">
                                     <h3>User Experience</h3>
-                                    <div class="bar">
-                                        <div class="bar-percent"></div>
-                                        <div class="bar-ball"></div>
-                                    </div>
-                                    <a href="#">96%</a>
+                                    <div class="bar"></div>
+                                    <input type="text" class="percent" readonly />
                                 </li>
                             </ul>
                     </div><!--/#my-skills-->
 
                     <footer >
-                        <div id="message">
+                        <div class="message">
                             <h4>Leave a Message:</h4>
                             <div>
                                 <input type="text" class="form-control" placeholder="Name*">
@@ -248,21 +230,21 @@
                         </div>
                         <ul>
                             <li>
-                                <img src="images/Home.png">
+                                <img src="images/Home.png" alt="img">
                                 <div>
                                     <h4>Location</h4>
                                     <p>324, Golden Tower, Amborkhana, Sylhet</p>
                                 </div>
                             </li>
                             <li>
-                                <img src="images/Mail.png">
+                                <img src="images/Mail.png" alt="img">
                                 <div>
                                     <h4>Email</h4>
                                     <p>junaed@deviserweb.com</p>
                                 </div>
                             </li>
                             <li>
-                                <img src="images/Phone.png">
+                                <img src="images/Phone.png" alt="img">
                                 <div>
                                     <h4>Toll Free Call</h4>
                                     <p>0800 234 6578</p>
@@ -270,9 +252,9 @@
                             </li>
                         </ul>
                         <div>
-                            <a href="#"><img src="images/Twitter.png"></a>
-                            <a href="#"><img src="images/Skype.png"></a>
-                            <a href="#"><img src="images/Dribbble-3.png"></a>
+                            <a href="#"><img src="images/Twitter.png" alt="Social"></a>
+                            <a href="#"><img src="images/Skype.png" alt="Social"></a>
+                            <a href="#"><img src="images/Dribbble-3.png" alt="Social"></a>
                             <p>Copyright: Junaed Ahmed, All rights reserved</p>
                         </div>
                     </footer>
@@ -286,7 +268,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 

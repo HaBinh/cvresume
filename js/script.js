@@ -1,18 +1,37 @@
-// my-skills Script 
-var percent;
-var bar;
-bar = document.querySelectorAll('.bar');
-percent = document.querySelectorAll('.bar-percent');
+// // my-skills Script 
+// var percent;
+// var bar;
+// bar = document.querySelectorAll('.bar');
+// percent = document.querySelectorAll('.bar-percent');
 
-percent.forEach(function(item,index){
-	var content = item.parentElement.nextElementSibling.innerHTML;
-	var ball = item.nextElementSibling;
-	var len = (Number(content[0])*10+Number(content[1]))/100;
-	len *= bar[index].clientWidth;
-	len -= ball.clientWidth/2;
-	item.style.width = content;
-	ball.style.left = len+'px';
-});
+// percent.forEach(function(item,index){
+// 	var content = item.parentElement.nextElementSibling.innerHTML;
+// 	var ball = item.nextElementSibling;
+// 	var len = (Number(content[0])*10+Number(content[1]))/100;
+// 	len *= bar[index].clientWidth;
+// 	len -= ball.clientWidth/2;
+// 	item.style.width = content;
+// 	ball.style.left = len+'px';
+// });
+
+$(function() {
+  $('.project').each(function() {
+    var $projectBar = $(this).find('.bar');
+    var $projectPercent = $(this).find('.percent');
+    var $projectRange = $(this).find('.ui-slider-range');
+    $projectBar.slider({
+      range: "min",
+      animate: true,
+      value: 1,
+      min: 0,
+      max: 100,
+      step: 1,
+      slide: function(event, ui) {
+        $projectPercent.val(ui.value + "%");
+      }
+    });
+  })
+})
 
 var link = document.querySelectorAll('a[href="#"]');
 function PreventDefault(e){
@@ -24,7 +43,7 @@ link.forEach(function(item,index){
 
 //Menu Toggle Script 
 $(document).ready(function(){
-    $("#sidebar-wrapper ul").height($('#wrapper').height()-$('#portrait').height());
+    $("#sidebar-wrapper .sidebar-nav").height($('#wrapper').height()-$('#portrait').height());
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $content = $("#header");//document.getElementById("content-header");

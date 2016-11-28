@@ -131,10 +131,12 @@ body {
     min-height: 1px;
     float: left;
 }
-.nav > li > a {
-    color: #fff;
+.nav > div {
     border-bottom: 1px solid #242431;
     padding: 15px 10px;
+}
+.nav > div > a {
+    color: #fff;
     font: 500 22px 'Raleway', sans-serif;
 }
 
@@ -199,13 +201,13 @@ h1.name{
 footer{
     padding-top: 80px;
 }
-#message{
+.message{
     width: 45%;
     float: left;
     position: relative;
     padding-bottom: 80px;
 } 
-footer #message div:nth-child(2){
+footer .message div:nth-child(2){
     border-right: 1px solid #cccccc;        
     padding: 30px 80px 0px 115px; 
 }
@@ -221,7 +223,7 @@ footer h4 {
     border-color: black;
     font: italic 500 14px 'Raleway', sans-serif;
 }
-#message input:nth-last-child(1){
+.message input:nth-last-child(1){
     height: 100px;
     padding-bottom: 74px;
 }
@@ -230,7 +232,7 @@ footer .box {
     font: 500 16px 'Raleway', sans-serif;
     margin-top: 0;
 }
-#message div:nth-child(3) {
+.message div:nth-child(3) {
     text-align: right;
     margin-right: 80px;
 }
@@ -477,13 +479,16 @@ div.main div.entry h2:after{
     display:block;
     clear: both;
 }
-#my-skills li a{
-    text-decoration: none;
+#my-skills li input{
+    text-align: center;
+    width: 40px;
+    border: none;
+    background-color: #1d1d24;
     color: #fff;
     font-size: 14px;
     position: absolute;
     top: 45px;
-    left: 285px;
+    left: 280px;
 }
 #my-skills .bar{
     width: 265px;
@@ -493,23 +498,16 @@ div.main div.entry h2:after{
     top:0;
     left:0;
 }
-#my-skills .bar-percent{
-    width: 90%;
-    height: 100%;
-    background-color: #fb6470;
+#my-skills > ul > li.project > div > div {
+    background: #fb6470;
 }
-#my-skills .bar-ball{
+#my-skills > ul > li.project > div > span {
     width: 20px;
     height: 20px;
     background-color: #fb6470;
     position: absolute;
     top:-8px;
-    left:-webkit-calc(90% - 10px);
-    left:-moz-calc(90% - 10px);
-    left:-o-calc(90% - 10px);
-    left:-ms-calc(90% - 10px);
-    left:calc(90% - 10px);
-    border-radius: 50%;
+    border-radius: 50%; 
 }
 /* END HOME PAGE */
 
@@ -611,7 +609,7 @@ div#single-portfolio {
     color: #333333;
     padding: 0 90px 10px 115px;
 }
-div#single-portfolio img#img-title{
+div#single-portfolio div#img-title{
     background: #333333;
     height: 450px;
     width: 100%;
@@ -662,7 +660,7 @@ div#single-portfolio > div.row > div > p:nth-child(4){
     font: 500 16px 'Raleway', sans-serif;
     margin-top: 25px;
 }
-div#single-portfolio #message {
+div#single-portfolio .message {
     padding: 25px 20px 80px 0;
 }
 #submit-btn{

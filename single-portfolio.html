@@ -25,26 +25,26 @@
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
+            <div class="sidebar-nav">
                 <div class="profile">
-                    <div id="portrait" alt="Portrait">
+                    <div id="portrait">
                       <a href="#menu-toggle" id="menu-toggle"><img src='images/Close.png' class="btn-close" height="40" width="40" alt="Close"></a>
                       <div>
                         <h2>Al Rayhan</h2>
                         <p>UI/UX Expert</p>
                       </div>
                     </div> 
-                    <ul class="nav nav-pills nav-stacked navbar sidenav">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="#about-me">About Me</a></li>
-                      <li><a href="#education">Education</a></li>
-                      <li><a href="#work-ex">Work Experience</a></li>
-                      <li><a href="#my-skills">Skills</a></li>
-                      <li><a href="portfolio.html">Portfolio</a></li>
-                      <li><a href="#message">Contacts</a></li>
-                    </ul><br>
+                    <nav class="nav nav-pills nav-stacked navbar sidenav">
+                      <div><a href="index.html">Home</a></div>
+                      <div><a href="#about-me">About Me</a></div>
+                      <div><a href="#education">Education</a></div>
+                      <div><a href="#work-ex">Work Experience</a></div>
+                      <div><a href="#my-skills">Skills</a></div>
+                      <div><a href="portfolio.html">Portfolio</a></div>
+                      <div><a href="#message">Contacts</a></div>
+                    </nav><br>
                 </div>
-            </ul>
+            </div>
         </div>
         <!-- /#sidebar-wrapper -->
 
@@ -53,7 +53,7 @@
             <div class="container-fluid">
                 <div class="main">                   
                     <div id="single-portfolio">
-                      <img id="img-title" src="">
+                      <div id="img-title"></div>
                       <div class="title">
                         <h3>Leading University Website Design</h3>
                         <h4>Branding UI/UX Article</h4>
@@ -64,7 +64,7 @@
                       <p>Comments (2)</p><br>
                       <div class="row">
                         <div class="col-sm-2 text-center">
-                          <img src="" class="img-circle" height="75" width="75" alt="Avatar">
+                          <img src="#" class="img-circle" height="75" width="75" alt="Avatar">
                         </div>
                         <div class="col-sm-10">
                           <h4>Junaed Ahmed  Numan <small>Jan 18th 2015</small></h4>
@@ -73,7 +73,7 @@
                           <p>Reply</p><br>
                           <div class="row">
                             <div class="col-sm-2 text-center">
-                              <img src="" class="img-circle" height="75" width="75" alt="Avatar">
+                              <img src="#" class="img-circle" height="75" width="75" alt="Avatar">
                             </div>
                             <div class="col-xs-10">
                               <h4>Angelina Zolie <small>Jan 18th 2015</small></h4>
@@ -83,7 +83,7 @@
                           </div>
                         </div>
                       </div>
-                      <div id="message">
+                      <div class="message">
                           <div>
                               <input type="text" class="form-control" placeholder="Email*">
                               <input type="text" class="form-control" placeholder="Comment*">
@@ -93,50 +93,48 @@
                     </div>
                 </div>
                 <footer >
-                    <div id="message">
-                        <h4>Leave a Message:</h4>
-                        <div>
-                            <input type="text" class="form-control" placeholder="Name*">
-                            <input type="text" class="form-control" placeholder="Email*">
-                            <input type="text" class="form-control" placeholder="Message*">
+                        <div class="message">
+                            <h4>Leave a Message:</h4>
+                            <div>
+                                <input type="text" class="form-control" placeholder="Name*">
+                                <input type="text" class="form-control" placeholder="Email*">
+                                <input type="text" class="form-control" placeholder="Message*">
+                            </div>
+                            <div><button class="box">Hire me!</button></div>
                         </div>
-                        <div><button class="box">Hire me!</button></div>
-                    </div>
-                    <ul>
-                        <li>
-                            <img src="images/Home.png">
-                            <div>
-                                <h4>Location</h4>
-                                <p>324, Golden Tower, Amborkhana, Sylhet</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/Mail.png">
-                            <div>
-                                <h4>Email</h4>
-                                <p>junaed@deviserweb.com</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/Phone.png">
-                            <div>
-                                <h4>Toll Free Call</h4>
-                                <p>0800 234 6578</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div>
-                        <a href="#"><img src="images/Twitter.png"></a>
-                        <a href="#"><img src="images/Skype.png"></a>
-                        <a href="#"><img src="images/Dribbble-3.png"></a>
-                        <p>Copyright: Junaed Ahmed, All rights reserved</p>
-                    </div>
+                        <ul>
+                            <li>
+                                <img src="images/Home.png" alt="img">
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>324, Golden Tower, Amborkhana, Sylhet</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/Mail.png" alt="img">
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>junaed@deviserweb.com</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/Phone.png" alt="img">
+                                <div>
+                                    <h4>Toll Free Call</h4>
+                                    <p>0800 234 6578</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="#"><img src="images/Twitter.png" alt="Social"></a>
+                            <a href="#"><img src="images/Skype.png" alt="Social"></a>
+                            <a href="#"><img src="images/Dribbble-3.png" alt="Social"></a>
+                            <p>Copyright: Junaed Ahmed, All rights reserved</p>
+                        </div>
                 </footer>
-                </div>
             </div>
         </div>
         <!-- /#page-content-wrapper -->
-
     </div>
     <!-- /#wrapper -->
 
